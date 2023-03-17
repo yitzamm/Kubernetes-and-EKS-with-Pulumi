@@ -16,9 +16,9 @@ Then follow these steps:
 3. Run `npm install` to install all necessary dependencies.
 4. Run `pulumi stack init <name>` to create a new stack.
 5. Set your desired AWS region with `pulumi config set aws:region <region-name>`.
-6. Run `pulumi config set eksOrgName <org-name>` to supply the name of the Pulumi Service organization where the Kubernetes cluster stack was created.
-7. Run `pulumi config set eksProjName <project-name>` to supply the name of the Pulumi Service project where the Kubernetes cluster stack was created.
-8. Run `pulumi config set eksStackName <stack-name>` to supply the name of the Kubernetes cluster stack.
+6. Run `pulumi config set k8sOrgName <org-name>` to supply the name of the Pulumi Service organization where the Kubernetes cluster stack was created.
+7. Run `pulumi config set k8sProjName <project-name>` to supply the name of the Pulumi Service project where the Kubernetes cluster stack was created.
+8. Run `pulumi config set k8sStackName <stack-name>` to supply the name of the Kubernetes cluster stack.
 9. Run `pulumi up`.
 
 **NOTE:** You'll see `Pulumi.test.yaml` and `Pulumi.prod.yaml` stack files in this repository. These are here for illustrative purposes (to tie back to the Pulumi blog series) and will not impact your ability to use the steps above _unless_ you use a stack name of "test" or "prod" for your stack.
