@@ -8,6 +8,8 @@ This application is based on [this source repository](https://github.com/aws-con
 
 [Instructions for using Pulumi](infra/README.md) to deploy this application and its associated infrastructure can be found in the `infra` folder.
 
+Local deployments using Pulumi are also supported; see [the README](develop/pulumi/README.md) in the `develop/pulumi` folder. This is useful for local testing of changes to the application before they are deployed elsewhere.
+
 ## Deploying to Docker Compose
 
 This application can be deployed locally via Docker Compose; use the `docker-compose.yml` file in the `deploy/docker-compose` folder.
