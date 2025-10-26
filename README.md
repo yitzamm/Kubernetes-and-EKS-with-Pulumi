@@ -7,7 +7,7 @@ This workshop provides hands-on experience with infrastructure-as-code and appli
 
 Link to the tutorial followed: [freeCodeCamp](https://www.youtube.com/watch?v=hK8wf18SasY&t=767s)
 
-<img width="300" height="300" alt="Image" src="https://github.com/user-attachments/assets/a174f9e5-d0fa-4a52-8215-6ddd0422fa69" />
+<img width="400" height="400" alt="Image" src="https://github.com/user-attachments/assets/2f056229-dcef-474e-b046-fc931930161d" />
 
 ## Key Points
 
