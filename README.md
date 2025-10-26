@@ -1,19 +1,29 @@
-# Zephyr Archaeotech Emporium Online Store
+# Kubernetes & EKS with Pulumi
+October 25, 2025
 
-This is the source repository for the online store of the Zephyr Archaeotech Emporium. It's used in [Pulumi's Zephyr series of blog posts](https://www.pulumi.com/blog/tag/zephyr/) to discuss best practices when using Pulumi to manage infrastructure and applications.
+The Zephyr Archaeotech Emporium Online Store is a sample e-commerce application used in Pulumi’s Zephyr blog series to demonstrate best practices for managing infrastructure and applications. It’s based on an existing retail store sample app, but has been adapted for this workshop.
 
-This application is based on [this source repository](https://github.com/aws-containers/retail-store-sample-app); the original `README.md` for the source is now found in the `/docs` folder.
+This workshop provides hands-on experience with infrastructure-as-code and application deployment, while teaching how to manage configuration, secrets, and deployment strategies across different environments. It also covers how to integrate local development workflows with CI/CD pipelines and cloud infrastructure for a seamless, end-to-end deployment process.
 
-## Deploying with Pulumi
+Link to the tutorial followed: [freCodeCamp](https://www.youtube.com/watch?v=hK8wf18SasY&t=767s)
 
-[Instructions for using Pulumi](infra/README.md) to deploy this application and its associated infrastructure can be found in the `infra` folder.
+![Image](https://github.com/user-attachments/assets/e2a0568f-7e7a-429b-a086-a6f07f048d58)
 
-Local deployments using Pulumi are also supported; see [the README](develop/pulumi/README.md) in the `develop/pulumi` folder. This is useful for local testing of changes to the application before they are deployed elsewhere.
+## Key Points
 
-## Deploying to Docker Compose
+**1. Deployment Options**
+***- Pulumi:*** You can deploy both the app and its supporting infrastructure through Pulumi. There are instructions for local testing as well as full deployments.
+***- Docker Compose:*** For local development or quick testing, the app can run locally using Docker Compose.
+***- Kubernetes:*** For more advanced deployment scenarios, the app can be deployed to a Kubernetes cluster using the provided manifests.
 
-This application can be deployed locally via Docker Compose; use the `docker-compose.yml` file in the `deploy/docker-compose` folder.
+**2. Workflow for the Workshop**
+- Start by running the app locally (Docker Compose) to test changes quickly.
+- Use Pulumi to deploy infrastructure and the application for a more production-like setup.
+- Optionally, deploy to Kubernetes to explore container orchestration and scaling.
 
-## Deploying to Kubernetes
+## Other References
 
-This application can be deployed to Kubernetes directly; use the `deploy.yaml` file in the `deploy/kubernetes` folder.
+- [Pulumi's Zephyr series of blog posts](https://www.pulumi.com/blog/tag/zephyr/)
+- [Source repository](https://github.com/aws-containers/retail-store-sample-app)
+- [Instructions for using Pulumi](infra/README.md)
+- [README](develop/pulumi/README.md)
