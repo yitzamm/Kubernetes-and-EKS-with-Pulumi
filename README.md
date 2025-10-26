@@ -5,6 +5,8 @@ October 25, 2025
 <img width="400" height="400" alt="Image" src="https://github.com/user-attachments/assets/2f056229-dcef-474e-b046-fc931930161d" />
 </p>
 
+## Project Description
+
 The Zephyr Archaeotech Emporium Online Store is a sample e-commerce application used in Pulumi’s Zephyr blog series to demonstrate best practices for managing infrastructure and applications. It’s based on an existing retail store sample app, but has been adapted for this workshop.
 
 This workshop provides hands-on experience with infrastructure-as-code and application deployment, while teaching how to manage configuration, secrets, and deployment strategies across different environments. It also covers how to integrate local development workflows with CI/CD pipelines and cloud infrastructure for a seamless, end-to-end deployment process.
