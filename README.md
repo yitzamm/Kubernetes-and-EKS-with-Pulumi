@@ -2,7 +2,7 @@
 October 25, 2025
 
 <p align="center">
-<img width="400" height="400" alt="Image" src="https://github.com/user-attachments/assets/2f056229-dcef-474e-b046-fc931930161d" />
+<img width="200" height="200" alt="Image" src="https://github.com/user-attachments/assets/2f056229-dcef-474e-b046-fc931930161d" />
 </p>
 
 ## Project Description
@@ -16,8 +16,11 @@ Link to the tutorial followed: [freeCodeCamp](https://www.youtube.com/watch?v=hK
 ## Key Points
 
 **1. Deployment Options**
+
 ***- Pulumi:*** You can deploy both the app and its supporting infrastructure through Pulumi. There are instructions for local testing as well as full deployments.
+
 ***- Docker Compose:*** For local development or quick testing, the app can run locally using Docker Compose.
+
 ***- Kubernetes:*** For more advanced deployment scenarios, the app can be deployed to a Kubernetes cluster using the provided manifests.
 
 **2. Workflow for the Workshop**
