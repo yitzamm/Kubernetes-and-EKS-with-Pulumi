@@ -5,7 +5,7 @@ The Zephyr Archaeotech Emporium Online Store is a sample e-commerce application 
 
 This workshop provides hands-on experience with infrastructure-as-code and application deployment, while teaching how to manage configuration, secrets, and deployment strategies across different environments. It also covers how to integrate local development workflows with CI/CD pipelines and cloud infrastructure for a seamless, end-to-end deployment process.
 
-<img width="450" height="250" alt="Image" src="https://github.com/user-attachments/assets/d1083db4-c75d-4bbf-b7c6-2968036d3c9c" />
+<img width="350" height="150" alt="Image" src="https://github.com/user-attachments/assets/d1083db4-c75d-4bbf-b7c6-2968036d3c9c" />
 
 Link to the tutorial followed: [freeCodeCamp](https://www.youtube.com/watch?v=hK8wf18SasY&t=767s)
 
