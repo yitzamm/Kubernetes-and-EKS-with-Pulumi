@@ -1,9 +1,7 @@
 # Zephyr Workshop - Kubernetes Microservices
 October 25, 2025
 
-<p align="center">
 <img width="400" height="200" alt="Image" src="https://github.com/user-attachments/assets/d1083db4-c75d-4bbf-b7c6-2968036d3c9c" />
-</p>
 
 ## Project Description
 
