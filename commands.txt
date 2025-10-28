@@ -52,5 +52,3 @@ NOTE: In kubectl delete all --all. all is a resource type shortcut in Kubernetes
 NOTE: The command above wipes everything that exists in the default namespace but not the namespace itself.
 Deleting the default namespace is usually not recommended, because Kubernetes always has a default namespace.
 Custom namespaces can however be deleted with: kubectl delete namespace namespace_name
-
-Hello everyone
