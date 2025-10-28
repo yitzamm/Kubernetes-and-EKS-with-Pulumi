@@ -1,0 +1,56 @@
+1. Clone the Workshop's repo
+>> git init
+>> git clone https://github.com/pulumi-zephyr/zephyr-app
+>> cd zephyr-app
+>> git remote remove origin
+>> git remote add origin my_repo_URL
+>> git checkout main
+
+2. Move to the kubernetes directory and test the cluster's connection
+>> cd deploy
+>> cd kubernetes
+>> kubectl cluster-info
+
+3. Create the namespaces, microservices, services and deployment configuration
+>> cd zephyr-app
+>> cd deploy
+>> cd kubernetes
+>> kubectl apply -f deploy.yaml
+
+4. Verification Commands:
+Check namespaces (search the given namespaces and their statuses):
+>> kubectl get namespaces | grep -E 'ui|catalog|carts|orders|checkout|assets|rabbitmq'
+OR
+>> kubectl get namespaces | Select-String 'ui|catalog|carts|orders|checkout|assets|rabbitmq'
+Check deployments (get deployment names, readiness, updates, availability and age):
+>> kubectl get deployments --all-namespaces
+Check services (get service names, type, cluster IP, external IP and port):
+>> kubectl get services --all-namespaces
+Check pods (get pod names, readiness and status):
+>> kubectl get pods --all-namespaces
+Check UI access (load balacer):
+>> kubectl get service ui-lb -n ui
+Check pods status (exclude the ones in active/running state):
+>> kubectl get pods --all-namespaces | grep -v "Running"
+OR
+>> kubectl get pods --all-namespaces | Select-String -NotMatch "Running"
+
+NOTE: The grep command works in Linux environments only, the equivalent in PowerShell is Select-String:
+IMPORTANT: Normally, grep uses basic regular expressions (BRE), which means certain special characters — like |, +, ?, and () — don’t work unless you escape them with a backslash (e.g. \|).
+When you use -E, you enable extended regex syntax, which lets you use those operators without escaping them.
+
+5. Troubleshoot defective namespaces and re-deploy
+>> kubectl delete all --all -n default
+>> kubectl apply -f deploy.yaml
+NOTE: In kubectl delete all --all. all is a resource type shortcut in Kubernetes.It tells kubectl to target all resource types that fall under “core” resources.
+--all is a flag that targets all instances of the resource(s). Without --all, you would need to specify a resource name (e.g.: kubectl delete pod my-pod -n default).
+    all → target all resource types
+    --all → target all resources of those types
+    -n default → do it in the default namespace
+>> kubectl get deployments --all-namespaces
+>> kubectl get pods -n default
+NOTE: The command above wipes everything that exists in the default namespace but not the namespace itself.
+Deleting the default namespace is usually not recommended, because Kubernetes always has a default namespace.
+Custom namespaces can however be deleted with: kubectl delete namespace namespace_name
+
+Hello everyone
