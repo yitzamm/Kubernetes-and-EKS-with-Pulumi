@@ -35,11 +35,11 @@ switch (process.arch) {
 // Build the UI image
 const uiImage = new docker.Image("ui-image", {
     build: {
+        context: "..\\..\\src\\ui",        // relative to develop/pulumi
+        dockerfile: "..\\..\\src\\ui\\Dockerfile", // absolute relative to Pulumi folder
         args: {
-            "JAR_PATH": "target/ui-0.0.1-SNAPSHOT.jar",
+            JAR_PATH: "target/ui-0.0.1-SNAPSHOT.jar",
         },
-        context: `${srcRepoPath}/src/ui`,
-        dockerfile: `${srcRepoPath}/src/ui/Dockerfile`,
         platform: imagePlatform,
     },
     imageName: "zephyr-ui:latest",
